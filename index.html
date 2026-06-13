@@ -1,230 +1,211 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.7">
-  <style type="text/css">
-    body {background-color: #2d2d30}
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
-    span.s1 {font-kerning: none}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Company IT Infrastructure Test Page</title>
+
+<style>
+:root{
+    --primary:#0066ff;
+    --secondary:#00c2ff;
+    --dark:#0f172a;
+    --card:#1e293b;
+    --text:#f8fafc;
+    --success:#22c55e;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg,#0f172a,#1e293b);
+    color:var(--text);
+    min-height:100vh;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.header{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.logo{
+    width:120px;
+    height:120px;
+    object-fit:contain;
+    background:white;
+    border-radius:16px;
+    padding:10px;
+    margin-bottom:20px;
+}
+
+.company-name{
+    font-size:2.5rem;
+    font-weight:700;
+}
+
+.subtitle{
+    color:#cbd5e1;
+    margin-top:10px;
+}
+
+.status-card{
+    background:var(--card);
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    margin-bottom:30px;
+    border:1px solid rgba(255,255,255,0.1);
+}
+
+.status{
+    font-size:1.8rem;
+    color:var(--success);
+    font-weight:700;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:var(--card);
+    padding:25px;
+    border-radius:16px;
+    border:1px solid rgba(255,255,255,0.08);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:var(--secondary);
+}
+
+.value{
+    font-size:1.1rem;
+    font-weight:600;
+    word-break:break-word;
+}
+
+.footer{
+    text-align:center;
+    margin-top:40px;
+    color:#94a3b8;
+}
+
+.badge{
+    display:inline-block;
+    padding:8px 15px;
+    border-radius:50px;
+    background:rgba(34,197,94,.15);
+    color:var(--success);
+    margin-top:15px;
+}
+</style>
 </head>
 <body>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
-<p class="p2"><span class="s1">&lt;html lang="en"&gt;</span></p>
-<p class="p2"><span class="s1">&lt;head&gt;</span></p>
-<p class="p2"><span class="s1">&lt;meta charset="UTF-8"&gt;</span></p>
-<p class="p2"><span class="s1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
-<p class="p2"><span class="s1">&lt;title&gt;Company IT Infrastructure Test Page&lt;/title&gt;</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">&lt;style&gt;</span></p>
-<p class="p2"><span class="s1">:root{</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>--primary:#0066ff;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>--secondary:#00c2ff;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>--dark:#0f172a;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>--card:#1e293b;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>--text:#f8fafc;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>--success:#22c55e;</span></p>
-<p class="p2"><span class="s1">}</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">*{</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>margin:0;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>padding:0;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>box-sizing:border-box;</span></p>
-<p class="p2"><span class="s1">}</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">body{</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>font-family: "Segoe UI", Arial, sans-serif;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>background: linear-gradient(135deg,#0f172a,#1e293b);</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>color:var(--text);</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>min-height:100vh;</span></p>
-<p class="p2"><span class="s1">}</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">.container{</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>max-width:1100px;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>margin:auto;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>padding:40px 20px;</span></p>
-<p class="p2"><span class="s1">}</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">.header{</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>text-align:center;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>margin-bottom:40px;</span></p>
-<p class="p2"><span class="s1">}</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">.logo{</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>width:120px;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>height:120px;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>object-fit:contain;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>background:white;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>border-radius:16px;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>padding:10px;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>margin-bottom:20px;</span></p>
-<p class="p2"><span class="s1">}</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">.company-name{</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>font-size:2.5rem;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>font-weight:700;</span></p>
-<p class="p2"><span class="s1">}</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">.subtitle{</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>color:#cbd5e1;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>margin-top:10px;</span></p>
-<p class="p2"><span class="s1">}</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">.status-card{</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>background:var(--card);</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>border-radius:20px;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>padding:30px;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>text-align:center;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>margin-bottom:30px;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>border:1px solid rgba(255,255,255,0.1);</span></p>
-<p class="p2"><span class="s1">}</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">.status{</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>font-size:1.8rem;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>color:var(--success);</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>font-weight:700;</span></p>
-<p class="p2"><span class="s1">}</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">.grid{</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>display:grid;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>grid-template-columns:repeat(auto-fit,minmax(250px,1fr));</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>gap:20px;</span></p>
-<p class="p2"><span class="s1">}</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">.card{</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>background:var(--card);</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>padding:25px;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>border-radius:16px;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>border:1px solid rgba(255,255,255,0.08);</span></p>
-<p class="p2"><span class="s1">}</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">.card h3{</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>margin-bottom:15px;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>color:var(--secondary);</span></p>
-<p class="p2"><span class="s1">}</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">.value{</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>font-size:1.1rem;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>font-weight:600;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>word-break:break-word;</span></p>
-<p class="p2"><span class="s1">}</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">.footer{</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>text-align:center;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>margin-top:40px;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>color:#94a3b8;</span></p>
-<p class="p2"><span class="s1">}</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">.badge{</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>display:inline-block;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>padding:8px 15px;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>border-radius:50px;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>background:rgba(34,197,94,.15);</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>color:var(--success);</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>margin-top:15px;</span></p>
-<p class="p2"><span class="s1">}</span></p>
-<p class="p2"><span class="s1">&lt;/style&gt;</span></p>
-<p class="p2"><span class="s1">&lt;/head&gt;</span></p>
-<p class="p2"><span class="s1">&lt;body&gt;</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">&lt;div class="container"&gt;</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="header"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- Replace logo.png with your company logo --&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;img src="logo.png" alt="Company Logo" class="logo"&gt;</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="company-name"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>YOUR COMPANY NAME</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="subtitle"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>Infrastructure Validation &amp; Hosting Test Portal</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="status-card"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="status"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>✓ Website Successfully Deployed</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="badge"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>Domain, Hosting &amp; SSL Operational</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="grid"&gt;</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h3&gt;🌐 Domain&lt;/h3&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="value" id="domain"&gt;&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h3&gt;🔒 Protocol&lt;/h3&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="value" id="protocol"&gt;&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h3&gt;📍 URL&lt;/h3&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="value" id="url"&gt;&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h3&gt;🕒 Current Time&lt;/h3&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="value" id="datetime"&gt;&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h3&gt;💻 Browser&lt;/h3&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="value" id="browser"&gt;&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="card"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h3&gt;📱 Screen Resolution&lt;/h3&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="value" id="resolution"&gt;&lt;/div&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="footer"&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>This page confirms that DNS resolution, web hosting,</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>SSL configuration, HTML, CSS, and JavaScript are functioning correctly.</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;br&gt;</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">            </span>Powered by Internal IT Operations</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">&lt;script&gt;</span></p>
-<p class="p2"><span class="s1">document.getElementById("domain").innerText = window.location.hostname;</span></p>
-<p class="p2"><span class="s1">document.getElementById("protocol").innerText = window.location.protocol;</span></p>
-<p class="p2"><span class="s1">document.getElementById("url").innerText = window.location.href;</span></p>
-<p class="p2"><span class="s1">document.getElementById("browser").innerText = navigator.userAgent;</span></p>
-<p class="p2"><span class="s1">document.getElementById("resolution").innerText =</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>screen.width + " x " + screen.height;</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">function updateTime() {</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span>document.getElementById("datetime").innerText =</span></p>
-<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span>new Date().toLocaleString();</span></p>
-<p class="p2"><span class="s1">}</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">updateTime();</span></p>
-<p class="p2"><span class="s1">setInterval(updateTime, 1000);</span></p>
-<p class="p2"><span class="s1">&lt;/script&gt;</span></p>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s1">&lt;/body&gt;</span></p>
-<p class="p2"><span class="s1">&lt;/html&gt;</span></p>
+
+<div class="container">
+
+    <div class="header">
+        <!-- Replace logo.png with your company logo -->
+        <img src="logo.png" alt="Company Logo" class="logo">
+
+        <div class="company-name">
+            YOUR COMPANY NAME
+        </div>
+
+        <div class="subtitle">
+            Infrastructure Validation & Hosting Test Portal
+        </div>
+    </div>
+
+    <div class="status-card">
+        <div class="status">
+            ✓ Website Successfully Deployed
+        </div>
+
+        <div class="badge">
+            Domain, Hosting & SSL Operational
+        </div>
+    </div>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>🌐 Domain</h3>
+            <div class="value" id="domain"></div>
+        </div>
+
+        <div class="card">
+            <h3>🔒 Protocol</h3>
+            <div class="value" id="protocol"></div>
+        </div>
+
+        <div class="card">
+            <h3>📍 URL</h3>
+            <div class="value" id="url"></div>
+        </div>
+
+        <div class="card">
+            <h3>🕒 Current Time</h3>
+            <div class="value" id="datetime"></div>
+        </div>
+
+        <div class="card">
+            <h3>💻 Browser</h3>
+            <div class="value" id="browser"></div>
+        </div>
+
+        <div class="card">
+            <h3>📱 Screen Resolution</h3>
+            <div class="value" id="resolution"></div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>
+            This page confirms that DNS resolution, web hosting,
+            SSL configuration, HTML, CSS, and JavaScript are functioning correctly.
+        </p>
+
+        <br>
+
+        <p>
+            Powered by Internal IT Operations
+        </p>
+    </div>
+
+</div>
+
+<script>
+document.getElementById("domain").innerText = window.location.hostname;
+document.getElementById("protocol").innerText = window.location.protocol;
+document.getElementById("url").innerText = window.location.href;
+document.getElementById("browser").innerText = navigator.userAgent;
+document.getElementById("resolution").innerText =
+    screen.width + " x " + screen.height;
+
+function updateTime() {
+    document.getElementById("datetime").innerText =
+        new Date().toLocaleString();
+}
+
+updateTime();
+setInterval(updateTime, 1000);
+</script>
+
 </body>
 </html>
